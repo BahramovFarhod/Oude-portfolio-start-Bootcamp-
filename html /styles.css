@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+	font-family:Arial, Helvetica, sans-serif
+	} /* создание стилевых свойств для всего сайта */
+#maket {
+	background: #C0C0C0;
+	margin: 0 auto;
+	width:1280px /* фиксированная ширина макета */
+	}
+#header {
+	height: 100px;
+	background: #C3B091;
+	}
+#header img {
+	width: 120px
+}
+	/* c приветственным тексом можно поступить так) */
+#header h1 {
+	text-align: center; /*выравниваем текст по ширине блока на середину*/
+	margin-top: -90px; /* поднимаем блок на 90px*/
+	color: #FFD700
+}
+#middle {
+	float: left;
+	width: 200px
+	}
+#middle a {
+	display: block; /* ссылка стала блочной */
+	padding:5px; /* по всем краям внутренние отступы */
+	text-decoration: none; /* убираем подчеркивание */
+	text-transform: uppercase;
+	color: rgba(0,51,102,1)
+	}
+
+#content {
+	margin-left:200px; /* внешний отступ слева (у контента) равен ширине блока #middle */
+	margin-right:200px; /* внешний отступ справа (у контента) равен ширине блока #sbright */
+	background: #FFF5EE;
+	margin-top:-20px /* поднимаем блок с контентом на 20px */
+	}
+#content h3 {
+	margin-left:5px;
+	margin-bottom:0;}
+#content p {
+	padding-right:10px;
+	}
+#content h2 {
+  text-align:center;
+  сolor: #BDB76B;
+}
+#sbright {
+	width: 200px;
+	float: right;
+	}
+#clear {clear:both}
+#footer {
+	padding: 10px;
+	width: 1255px;
+	background: #C3B091;
+	text-align: center;
+	position: fixed; /* передвигается вместе с монитором. Посмотрите на сайте про позишн */
+	bottom:0; /* прижимаем футер к низу. Двигается с экраном монитора */
+	color:rgba(255,255,255,1)
+	}

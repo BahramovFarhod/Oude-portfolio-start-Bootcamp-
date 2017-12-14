@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+	font-family:Arial, Helvetica, sans-serif
+	} /* создание стилевых свойств для всего сайта */
+
+#maket {
+	background: #000000;
+	margin: 0 auto;
+	width:1270px; /* фиксированная ширина макета */
+}
+
+  .header {
+     background: #ffffff;
+  }
+
+
+
+  .header .menu {
+      border-top: 3px solid black;
+      padding: 15px;
+      text-align: center;
+    }
+
+
+  .header .menu .button {
+      display: inline-block;
+      background: #000000;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-family: Arial;
+      }
+
+  .header .menu .button:hover {
+    background: #FF1493;
+  }
+
+  .fig {
+     display: block; /* Блочный элемент (для старых браузеров) */
+     text-align: center; /* Выравнивание по центру */
+     font-style: italic; /* Курсивное начертание */
+     margin-top: 0; /* Отступ сверху */
+     margin-bottom: 5px; /* Отступ снизу */
+
+   }
+
+#sbright {
+  float: right;
+  width: 200px;
+
+}
+
+#sbright a {
+	display: block; /* ссылка стала блочной */
+	padding:5px; /* по всем краям внутренние отступы */
+	text-decoration: none; /* убираем подчеркивание */
+	text-transform: uppercase;
+	background: #ffffff;
+	}
+
+
+
+#middle {
+	float: left;
+	width: 200px;
+
+	}
+
+
+
+
+
+
+//* voor "search" *//
+
+   input {
+
+     style="vertical-align:middle;"
+
+}
+
+.fig {
+   display: block; /* Блочный элемент (для старых браузеров) */
+   text-align: center; /* Выравнивание по центру */
+   font-style: italic; /* Курсивное начертание */
+   margin-top: 0; /* Отступ сверху */
+   margin-bottom: 5px; /* Отступ снизу */
+ }
+
+
+#middle a {
+	display: block; /* ссылка стала блочной */
+	padding:5px; /* по всем краям внутренние отступы */
+	text-decoration: none; /* убираем подчеркивание */
+	text-transform: uppercase;
+	background: #ffffff;
+	}
+
+#content {
+	margin-left:200px; /* внешний отступ слева (у контента) равен ширине блока #middle */
+	margin-right:200px; /* внешний отступ справа (у контента) равен ширине блока #sbright */
+	background: #FFFFFF;
+	margin-top:-0px;/* поднимаем блок с контентом на 20px */
+	}
+
+
+
+#content h3 {
+	margin-left:20px;
+	margin-bottom:0;}
+#content p {
+	padding-right:10px;
+	}
+#content h2 {
+  text-align:center;
+  сolor: #3A75C4;
+}
+
+
+
+
+#clear {clear:both}
+
+#footer {
+	padding: 10px;
+	width: 1255px;
+	background: #ffffff;
+  text-align: center;
+	position: fixed; /* передвигается вместе с монитором. Посмотрите на сайте про позишн */
+	bottom:0; /* прижимаем футер к низу. Двигается с экраном монитора */
+	color:#000000;
+	}

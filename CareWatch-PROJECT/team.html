@@ -1,0 +1,303 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="all,index,follow" />
+<title>Carewatch-team</title>
+<link rel="stylesheet" type="text/css" href="css/team.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> <!--Open Sans/-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'> <!--PTSans Narrow-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!-- Font Awesome /-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/> <!-- Favicon /-->
+
+<script type="text/javascript">
+  var total_pics_num = 4; 
+  var interval = 5000;    
+  var time_out = 1;       
+  var i = 0;
+  var timeout;
+  var opacity = 100;
+  function fade_to_next() {
+    opacity--;
+    var k = i + 1;
+    var image_now = 'image_' + i;
+    if (i == total_pics_num) k = 1;
+    var image_next = 'image_' + k;
+    document.getElementById(image_now).style.opacity = opacity/100;
+    document.getElementById(image_now).style.filter = 'alpha(opacity='+ opacity +')';
+    document.getElementById(image_next).style.opacity = (100-opacity)/100;
+    document.getElementById(image_next).style.filter = 'alpha(opacity='+ (100-opacity) +')';
+    timeout = setTimeout("fade_to_next()",time_out);
+    if (opacity==1) {
+      opacity = 100;
+      clearTimeout(timeout);
+    }
+  }
+  setInterval (
+    function() {
+      i++;
+      if (i > total_pics_num) i=1;
+      fade_to_next();
+    }, interval
+  );
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="foto-header">
+  <img src='img/code.png' id="image_1" style="position: absolute; width: 100%; height: 40%; margin-top: -24.3%;" />
+  <img src='img/handen.png' id="image_2" style="opacity: 0; filter: alpha(opacity=0); position: absolute; width: 100%; height: 40%;margin-top: -24.3%;" />
+  <img src='https://tutorialzine.com/media/2017/08/titanic.gif' id="image_3" style="opacity: 0; filter: alpha(opacity=0); position: absolute; width: 100%; height: 40%;margin-top: -24.3%;" />
+  <img src='img/top.png' id="image_4" style="opacity: 0; filter: alpha(opacity=0); position: absolute; width: 100%; height: 40%;margin-top: -24.3%;" />
+</div> 
+
+
+  <nav class="headernav">
+  <ul class="main-nav">
+    <li><a href="index.html">Project</a></li>
+    <li><a href="https://www.codegorilla.nl/trainee/">Codegorilla</a>
+      <ul class="articles-nav">
+        <li><a href="#">Webdevelopment</a></li>
+        <li><a href="#">Bootcamp</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.google.nl/search?biw=1280&bih=663&tbm=isch&sa=1&ei=bGkoWuj5HYvXgAa5zKmgAQ&q=codegorilla+fotos&oq=codegorilla+fotos&gs_l=psy-ab.3...27713.36618.0.36915.32.31.0.0.0.0.168.2347.21j7.30.0....0...1c.1.64.psy-ab..8.14.1070.0..0j0i67k1j0i30k1j0i5i30k1j0i24k1j0i10i24k1.60.CxO_74Jkl20">Gallery</a></li>
+  </ul>
+  </nav>
+  <hr class="divider"/>
+  <div class="image"></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ********     Onse team ****************-->
+
+<!-- SPEAKERS SECTION --> 
+  <section id="speakers">
+    <h3>Our Professionale Team</h3> 
+    <div class="separator"></div>
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <!-- Section Description -->
+         <p>“Everybody in this world should learn how to program a computer…
+because it teaches you how to think".”   Steve jobs.</p>
+      </div>
+      
+      <!-- First Row of Speakers -->
+     <div class="row1">
+      
+        <!-- Speaker 1 -->
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/feed/?trk=" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/farhod.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/farhod.jpg" alt="" />
+            </div>
+            <span>FRONTEND</span>
+            <h4><span>Farhod </span> Bahramov</h4>
+          </a>  
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>           
+          </ul>
+        </div>
+        
+        <!-- Speaker 2 -->
+       <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/janneke-wolbers-29a697150/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/janneke.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/janneke.jpg" alt="" />
+            </div>
+            <span>BACKEND</span>
+            <h4><span>Janneke </span> Wolbers</h4>
+          </a>  
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        
+        <!-- Speaker 3 -->
+        <div class="col-md-3">
+          <a href="#" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/richard.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/richard.jpg" alt="" />
+            </div>
+            <span>BACKEND</span>
+            <h4><span>Richard</span> Van der Veen</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>           
+            <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>            
+          </ul>         
+        </div>
+        
+        <!-- Speaker 4 -->
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/marc-blaak-9bb720140/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/mark.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/mark.jpg" alt="" />
+            </div>
+            <span>FRONTEND</span>
+            <h4><span>Marc</span> Blaak</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          </ul>           
+        </div>
+        
+      </div> <!-- End First Row -->
+      <div class="clear"></div>
+      
+      <!-- Second Row of Speakers -->
+      <div class="row2">
+      
+        <!-- Speaker 5 -->
+       <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/elron-ruh%C3%A9-13b039100/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/elron.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/elron.jpg" alt="" />
+            </div>
+            <span>FRONTEND</span>
+            <h4><span>Elron</span> Ruhé</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>           
+          </ul>
+        </div>
+        
+        <!-- Speaker 6 -->  
+       <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/jacob-ibrahim-513699154/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/jacob.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/jacob.jpg" alt="" />
+            </div>
+            <span>BACKEND</span>
+            <h4><span>Jacob</span> Ibrahim</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        
+        <!-- Speaker 7 -->
+       <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/erwinoudgenoeg/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/erwin.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/erwin.jpg" alt="" />
+            </div>
+            <span>BACKEND</span>
+            <h4><span>Erwin</span> Oudgenoeg</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>           
+            <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>            
+          </ul>         
+        </div>
+        
+        <!-- Speaker 8 -->
+       <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/hansmoorlag/" class="member-profile">
+            <div class="unhover_img">
+            <img src="img/hans.jpg" alt="" />
+            </div>
+            <div class="hover_img">
+            <img src="img/hans.jpg" alt="" />
+            </div>
+            <span>FRONTEND</span>
+            <h4><span>Hans</span> Morlag</h4>
+          </a>          
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        
+      </div>  <!-- End Second Row --> 
+     <div class="clear"></div>
+      
+      <!-- View All Button -->
+     <div class="col-md-12">
+        <button class="btn btn-transparent fadeIn">View All</button>
+      </div>  
+          
+    </div>
+  </section>
+  <!-- //SPEAKERS SECTION --> 
+
+
+
+<footer>
+  <i><em>Copyright&copy; Codegorilla 2017</em></i>
+</footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- Load jQuery -->
+
+  <!-- jQuery Code for the View All Button -->
+ <script>
+    $(document).ready(function(){
+      $(".fadeIn").click(function(){
+      $("div.row2").fadeIn();
+      $("button.fadeIn").hide();
+      });
+    });
+  </script> 
+  
+
+
+
+
+</body>
+</html>

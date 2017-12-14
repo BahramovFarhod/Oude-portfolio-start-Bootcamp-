@@ -1,0 +1,307 @@
+body {
+  background: url('https://image.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg'); 
+  color: #33404d;
+  text-shadow: 0 1px 0 #fff;
+  /*Better Helvetica*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/* Dropdown Menue settings*/
+.headernav {
+  right:45%;
+  margin-top: 25%;
+  position: relative;
+  text-align: right;
+
+
+  }
+
+
+nav ul ul { /* General Function for the dropdown, hide on start*/
+  display: none;
+}
+  nav ul li:hover > ul { /* unhide dropdown when hovering main-nav item*/
+    display: block;
+  }
+
+nav ul {
+  padding: 0px;
+  margin: 0;
+  border-radius: 0;  
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+  nav ul:after {
+    content: ""; 
+    clear: both;
+    display: block;
+  }
+nav ul li {
+  float: left;
+}
+  nav ul li:after { /*Divider between main-nav items*/
+    content: " | ";
+    float: right;
+    padding: 6px 0;
+  }
+  nav ul li:last-child:after { /*No Divider for the last main-nav item*/
+    content: "";
+  }
+  nav ul li:hover a {
+    color: #2080df;
+  -webkit-tab-highlight-color: rgba(0,0,0,0);
+  }
+  nav ul li a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #33404d;
+    float: left;
+  }
+  nav ul li:last-child a {
+    padding: 6px 0px 6px 12px;
+  }
+nav ul li:hover ul li a{
+  color: #33404d;
+}
+  nav ul li:hover ul li a:hover{
+    color: #2080df;
+  }
+nav ul ul {
+  padding: 0 12px;
+  position: absolute;
+  top: 100%;
+  background: #f8f8f8;
+  box-shadow: 0 2px 2px #ccc;
+  
+}
+nav ul ul li {
+  float: none;
+  position: relative;
+}
+  nav ul ul li:after {
+    content: ""; /*to prevent inherent Divider from main-nav items*/
+  }
+  nav ul ul li a {
+    padding: 6px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 1px #f2f2f2;
+    border-top: solid 1px #fff;
+    white-space: nowrap; /* to prevent line break of link text*/
+  }
+  nav ul ul li:last-child a {
+    padding: 6px 0;
+    border-bottom: none;
+  }
+  nav ul ul li:first-child a {
+    border-top: none;
+  }
+
+  .divider {
+  height: 1px;
+  background: #e5e5e5;
+  border: none;
+  border-bottom: solid 1px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------Hier begint stylen van OUR TEAM. --------------------- */
+
+
+
+ * {margin: 0; padding: 0;}
+
+p {line-height: 160%;}
+
+a {text-decoration: none; color: #fff; transition: all 0.1s ease-in;}
+img {border: 0;}
+
+body {
+  background: #fff;
+  color: #000;
+ 
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.clear {clear: both;}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 40px;
+  color: rgba(255,255,255, 0.95);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  outline: 0;
+  transition: all 0.1s ease-in;
+}
+
+.btn-transparent {background: rgba(0,0,0, 0.2);}
+.btn-transparent:hover {background: rgba(0,0,0, 0.4);}
+
+/* Separators */
+.separator {
+  margin:  auto;
+  background: rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 5px;
+}
+
+/* 02. FONT FACE ============================================ */
+
+@font-face {
+    font-family: 'norwester';
+  src: url('../fonts/norwester/norwester.eot');
+    src: url('../fonts/norwester/norwester.eot?iefix') format('embedded-opentype'),
+     url('../fonts/norwester/norwester.ttf');
+    font-weight: normal;
+
+}
+
+/* 03. SPEAKERS SETTINGS ============================================ */
+
+#speakers {
+  padding: 60px 0;
+  background: #4593e3;
+  text-align: center; 
+  
+}
+
+#speakers p {
+  padding: 20px 0 60px;
+  color: rgba(255,255,255, 0.85);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+#speakers h3 {
+  padding: 0 0 15px;
+  font-family: 'norwester';
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#speakers h4  {
+  margin-top: -20px;
+  font-size: 32px;
+  font-weight: 700;
+
+}
+
+#speakers h4 span {
+  display: block;
+  position: relative;
+  left: -40px;
+  top: 10px;
+  font-size: 20px;
+  background: none;
+  padding: 0;
+}
+
+#speakers img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 50%; 
+  border: 15px solid transparent; 
+  box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+  transition: all 0.1s ease-in;
+  
+}
+  
+#speakers img:hover {
+  border: 15px solid #3980C9;
+  position: relative;
+  z-index: 10;
+  transition: all 0.1s ease-in; 
+}
+
+#speakers span {
+  padding: 8px 20px;
+  position: relative;
+  top: -64px;
+  left: -42px;
+  display: inline-block;
+  background: #4593e3;
+  border-radius: 0 16px 16px 0;
+  font-size: 16px;
+}
+
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.member-profile:hover .unhover_img{
+  display: none;
+}
+
+.member-profile:hover .hover_img {
+  display: block;
+}
+
+/* Social Networks Meta */
+#speakers li {display: inline-block; padding: 0 6px; font-size: 18px;}
+#speakers li a {color: rgba(0,0,0, 0.3); transition: all 0.1s ease-in;}
+#speakers li a:hover {color: rgba(0,0,0, 0.7);}
+
+/* Rows Optimization */
+.row2 {
+  display: none;
+}
+
+.row1 .col-md-3, .row2 .col-md-3 {
+  padding-bottom: 40px;
+}
+
+/* Mobile Devices Optimization */
+@media (min-width: 568px) and (max-width: 992px) {
+
+  .row1 .col-md-3, .row2 .col-md-3 {
+    display: inline-block;
+    max-width: 50%;
+  }
+
+  #speakers img {max-width: 300px;}
+
+}
+
+/* ---------------------------------------Hier begint FOOTER***************************************************************************/
+
+
+footer {
+    width:100%;
+    height:80px;
+    padding: 33px;
+    bottom :2px;
+    color: white;
+    background-color: #005684;
+    clear: left;
+    text-align:center;
+    position: relative;
+
+}
+
+
+

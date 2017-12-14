@@ -1,0 +1,72 @@
+/*navbar style begin*/
+/* navbar */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://image.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg');
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+#logoutbtn{
+  background-color:white;
+    border: none;
+    color: Black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:right;
+    margin-top:-40px;
+    margin-right:-40px;
+}
+
+p{
+  color:white;
+  display:inline;
+}
+.navbar {
+    background-color: #31849B;
+    border-color: #E7E7E7;
+    margin-top: 0em;
+
+}
+/* Title */
+.navbar .navbar-brand {
+    color: #ffffff;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* Link */
+.navbar .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #5BBEB4;
+
+}
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #5BBEB4;
+
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+
+}
+/*navbar style end*/
+
+.row {
+  background-color: #FFFFFF;
+  margin-top: 1em;
+}

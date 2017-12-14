@@ -1,0 +1,76 @@
+*{
+  padding:0;
+  margin:0;
+}
+#button{
+  background-color:rgb(48, 123, 144)
+  color:white;
+}
+header{
+  background-color:rgb(48, 123, 144);
+  width:796px;
+  margin:auto;
+  height:100px;
+  color:white;
+  text-align:center;
+  margin-top:-22px;
+  border:2px solid black;
+  }
+
+body{
+  background-color:white;
+}
+header h1{
+  line-height: 100px;
+}
+
+.container-text{
+  max-width:800px;
+  margin:auto;
+  height:200px;
+  background-color:rgb(48, 123, 144);
+  margin-bottom:2px;
+  color:white;
+}
+.container{
+  max-width:800px;
+  margin:auto;
+  font-family:arial;
+}
+.month{
+  text-align:center;
+  background:rgb(48, 123, 144);
+  font-size:2.5em;
+  letter-spacing:1px;
+  color:white;
+  padding:25px;
+  border:2px solid black;
+}
+table, th, td{
+  width:100%;
+  table-layout:fixed;
+  text-align:center;
+  font-size:17px;
+  border-collapse:collapse;
+  border:2px solid Black;
+}
+tr, th, td{
+  padding:15px
+}
+th{
+  background:rgb(48, 123, 144);
+  color:white;
+}
+td{
+  background:white;
+}
+td:hover{
+  background:rgb(48, 123, 144);
+}
+.container_introduction{
+width:100%;
+height:30px;
+background-color:Red;
+color:White;
+
+}
